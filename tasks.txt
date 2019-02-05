@@ -2,3 +2,6 @@ We have to order the classes based on the dependency tree of liquid fun.
 So step 1 is to map out the dependeny of liquid fun so we can use that as a reference when collecting all of our classes together.
 
 Common section in Box2D is completely in liquid.hpp and compiles successfully.
+Collision section is integrated.
+Rope integrated.
+Everything is compiling.
