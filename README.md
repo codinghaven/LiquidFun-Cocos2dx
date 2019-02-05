@@ -15,10 +15,14 @@ so there's no static linking to any Box2d liibrary as there is none in this fork
 Instead when creating a project you will find a `liquid.hpp` file under the `Classes` folder.
 
 If you don't want to use this forked version of cocos2d, you will have to manually disable and remove
-and Box2D configurations, you don't have to but it is advised.
+all Box2D configurations, you don't have to but it is advised to do so.
 
-Instructions:
-First read instructions on cocos2d-x main page 
-Clone the project and and run the regular `cocos new...` command.
+The `liquid.hpp` header file can be found under the `cocos2dx/templates/cpp-template-default/Classes`
+
+Creating a project is the same as you would regularly do using `cocos new...`.
 
 After that you will have an empty project that's ready to go :)
+
+Note:
+If you are using Ricardo Quesedas code, in particular `LFParticleSystemNode`,
+you will have to change the include from `Box2D/Box2D.h` to `liquid.hpp`
