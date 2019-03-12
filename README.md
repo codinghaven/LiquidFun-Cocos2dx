@@ -20,6 +20,6 @@ build errors due to multiple definitions.
 
 The `liquid.cpp` file can be found under the `cocos2dx/external/Box2D` 
 
-Creating a project is the same as you would regularly do using `cocos new...`.
+Creating a project is the same as you would regularly do using `cocos new`
 
 After that you will have an empty project that's ready to go :)
