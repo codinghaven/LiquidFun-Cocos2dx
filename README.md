@@ -23,3 +23,8 @@ The `liquid.cpp` file can be found under the `cocos2dx/external/Box2D`
 Creating a project is the same as you would regularly do using `cocos new`
 
 After that you will have an empty project that's ready to go :)
+
+Note: 
+
+As of now, only Android is fully supported. 
+IOS and Windows are coming soon!
