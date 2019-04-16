@@ -1353,8 +1353,6 @@
 		46A171041807CECB005B8026 /* CCPhysicsShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A170761807CE7A005B8026 /* CCPhysicsShape.h */; };
 		46A171051807CECB005B8026 /* CCPhysicsWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46A170771807CE7A005B8026 /* CCPhysicsWorld.cpp */; };
 		46A171061807CECB005B8026 /* CCPhysicsWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A170781807CE7A005B8026 /* CCPhysicsWorld.h */; };
-		46BDE4A81FA32D3400104C05 /* libbox2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BDE4A71FA32D3400104C05 /* libbox2d.a */; };
-		46BDE4AA1FA3316A00104C05 /* libbox2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BDE4A91FA3316A00104C05 /* libbox2d.a */; };
 		46BDE4C21FA86C7F00104C05 /* Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 46BDE4B11FA86C7F00104C05 /* Array.c */; };
 		46BDE4C31FA86C7F00104C05 /* Array.h in Headers */ = {isa = PBXBuildFile; fileRef = 46BDE4B21FA86C7F00104C05 /* Array.h */; };
 		46BDE4C41FA86C7F00104C05 /* ClippingAttachment.c in Sources */ = {isa = PBXBuildFile; fileRef = 46BDE4B31FA86C7F00104C05 /* ClippingAttachment.c */; };
@@ -6091,7 +6089,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED682BBA213F5FC7001BF6CB /* libuv_a.a in Frameworks */,
-				46BDE4A81FA32D3400104C05 /* libbox2d.a in Frameworks */,
 				46270FA41E1CC6A200AAA098 /* libcrypto.a in Frameworks */,
 				468A197D1EF3BA6500ECA675 /* libMiniCL.a in Frameworks */,
 				46270FA51E1CC6A200AAA098 /* libssl.a in Frameworks */,
@@ -6139,7 +6136,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED682BC1213F63CB001BF6CB /* libuv_a.a in Frameworks */,
-				46BDE4AA1FA3316A00104C05 /* libbox2d.a in Frameworks */,
 				466F05251EF7659300B80080 /* libBulletCollision.a in Frameworks */,
 				466F05261EF7659300B80080 /* libBulletDynamics.a in Frameworks */,
 				466F05271EF7659300B80080 /* libBulletMultiThreaded.a in Frameworks */,
