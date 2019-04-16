@@ -19,8 +19,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		294D0D641D0D56D500F7F5D4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294D0D631D0D56D500F7F5D4 /* CoreText.framework */; };
-		461884BE2265258E00D0CBB1 /* LFParticleSystemNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 461884BD2265258E00D0CBB1 /* LFParticleSystemNode.cpp */; };
-		461F9CE122652DF200397278 /* liquid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 461F9CE022652DF200397278 /* liquid.cpp */; };
+		462D62F722657D080043E67F /* LFParticleSystemNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 462D62F522657D080043E67F /* LFParticleSystemNode.cpp */; };
 		46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
@@ -105,9 +104,8 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		294D0D631D0D56D500F7F5D4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		461884BD2265258E00D0CBB1 /* LFParticleSystemNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LFParticleSystemNode.cpp; sourceTree = "<group>"; };
-		461884BF2265259C00D0CBB1 /* LFParticleSystemNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFParticleSystemNode.h; sourceTree = "<group>"; };
-		461F9CE022652DF200397278 /* liquid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = liquid.cpp; path = ../../../cocos2dx/external/Box2D/liquid.cpp; sourceTree = "<group>"; };
+		462D62F522657D080043E67F /* LFParticleSystemNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LFParticleSystemNode.cpp; sourceTree = "<group>"; };
+		462D62F622657D080043E67F /* LFParticleSystemNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFParticleSystemNode.h; sourceTree = "<group>"; };
 		46880B8419C43A87006E1F66 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				461F9CE022652DF200397278 /* liquid.cpp */,
 				46880B8319C43A87006E1F66 /* Classes */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -258,12 +255,12 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				461884BF2265259C00D0CBB1 /* LFParticleSystemNode.h */,
-				461884BD2265258E00D0CBB1 /* LFParticleSystemNode.cpp */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
 				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
+				462D62F522657D080043E67F /* LFParticleSystemNode.cpp */,
+				462D62F622657D080043E67F /* LFParticleSystemNode.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -412,12 +409,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				461F9CE122652DF200397278 /* liquid.cpp in Sources */,
 				1AF87B781F6F77F7007BE51C /* AppController.mm in Sources */,
 				1AF87B8B1F6F782A007BE51C /* RootViewController.mm in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				1AF87B8A1F6F7822007BE51C /* main.m in Sources */,
-				461884BE2265258E00D0CBB1 /* LFParticleSystemNode.cpp in Sources */,
+				462D62F722657D080043E67F /* LFParticleSystemNode.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,9 +587,9 @@
 					"$(SRCROOT)/../cocos2d/cocos",
 					"$(SRCROOT)/../cocos2d/extensions",
 					"$(SRCROOT)/../cocos2d/external",
+					"$(SRCROOT)/../cocos2d/external/Box2D",
 					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
 					"$(SRCROOT)/../cocos2d/cocos/editor-support",
-					"$(SRCROOT)/../cocos2d/external/Box2D",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
@@ -616,9 +612,9 @@
 					"$(SRCROOT)/../cocos2d/cocos",
 					"$(SRCROOT)/../cocos2d/extensions",
 					"$(SRCROOT)/../cocos2d/external",
+					"$(SRCROOT)/../cocos2d/external/Box2D",
 					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
 					"$(SRCROOT)/../cocos2d/cocos/editor-support",
-					"$(SRCROOT)/../cocos2d/external/Box2D",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;

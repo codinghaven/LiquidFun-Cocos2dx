@@ -2,18 +2,23 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
+$(call import-add-path,$(LOCAL_PATH)/../../../cocos2d)
+$(call import-add-path,$(LOCAL_PATH)/../../../cocos2d/external)
+$(call import-add-path,$(LOCAL_PATH)/../../../cocos2d/cocos)
+$(call import-add-path,$(LOCAL_PATH)/../../../cocos2d/cocos/audio/include)
+
 LOCAL_MODULE := MyGame_shared
 
 LOCAL_MODULE_FILENAME := libMyGame
 
 LOCAL_SRC_FILES := $(LOCAL_PATH)/hellocpp/main.cpp \
-                   $(LOCAL_PATH)/../../../cocos2d/external/Box2D/liquid.cpp \
                    $(LOCAL_PATH)/../../../Classes/AppDelegate.cpp \
                    $(LOCAL_PATH)/../../../Classes/HelloWorldScene.cpp \
-                   $(LOCAL_PATH)/../../../Classes/LFParticleSystemNode.cpp
+                   $(LOCAL_PATH)/../../../Classes/LFParticleSystemNode.cpp \
+		           $(LOCAL_PATH)/../../../cocos2d/external/Box2D/liquid.cpp
 
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../Classes \ 
-		 			$(LOCAL_PATH)/../../../cocos2d/external/Box2D/
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../Classes \
+
 
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END

@@ -37,8 +37,6 @@
 #include <stdlib.h>
 #include "Box2D.h"
 
-
-
 b2ChainShape::~b2ChainShape()
 {
 	b2Free(m_vertices);

@@ -50,13 +50,11 @@ endif()
 list(APPEND GAME_SOURCE
      Classes/AppDelegate.cpp
      Classes/HelloWorldScene.cpp
-     Classes/LFParticleSystemNode.cpp
      cocos2d/external/Box2D/liquid.cpp
      )
 list(APPEND GAME_HEADER
      Classes/AppDelegate.h
      Classes/HelloWorldScene.h
-     Classes/LFParticleSystemNode.h
      cocos2d/external/Box2D/Box2D.h
      )
 
