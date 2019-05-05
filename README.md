@@ -12,7 +12,7 @@ External 3rd party libs are already installed with Box2d modified, namely prebui
 file from LiquidFun is removed except for the liquid.cpp file which contains everything.
 
 When creating a new project using `cocos new...` using this cocos2dx version you will get LiquidFun
-already integrated.
+already integrated. Make sure you point you point your `COCOS_X_ROOT` to this version.
 
 If you don't want to use this forked version of cocos2d, you will have to manually disable and remove
 all Box2D prebuilt folders and static linking in the related build files, failing to do so will result in numerous
